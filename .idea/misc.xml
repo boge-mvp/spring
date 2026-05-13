@@ -6,9 +6,6 @@
     <list size="0" />
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="9d5605e1-9706-40ab-9bbe-b4dc829b5702" />
-  </component>
   <component name="KubernetesApiProvider"><![CDATA[{}]]></component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">

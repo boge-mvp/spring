@@ -6,7 +6,6 @@
 
     <artifactId>spring</artifactId>
     <groupId>com.boge.spring</groupId>
-    <version>1.7.12</version>
 
     <name>SpringLib</name>
 
