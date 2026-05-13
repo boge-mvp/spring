@@ -74,6 +74,6 @@ jobs:
           mvn versions:set -DnewVersion=${{ env.PROJECT_VERSION }} -DgenerateBackupPoms=false
       
       - name: 发布到 GitHub Packages
-        run: mvn -B clean deploy -DskipTests
+        run: mvn -B clean deploy -DskipTests -Dkapt.skip=true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
