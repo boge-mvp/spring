@@ -1,0 +1,49 @@
+spring:
+  # 运行环境 dev:开发环境|test:测试环境|prod:生产环境
+  profiles:
+    active: test
+  main:
+    allow-bean-definition-overriding: true
+  # jackson
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+  data:
+    redis:
+      lettuce:
+        pool:
+          max-idle: 2
+      password: abcd1234
+
+
+config:
+  redis:
+    keyPrefix: test
+    enabled-cache: true
+  http:
+    api-base-url: https://www.onebet.cm/gameRes/game-release/games/
+    virtual-thread: true
+
+
+logging:
+  level:
+#    root: all
+#    io.lettuce: debug
+    com.HttpTest: debug
+    com.HttpUtil: debug
+#    sql: debug
+#    web: info
+  pattern:
+    dateformat: yyyy-MM-dd'T'HH:mm:ss,SSS
+    console: "%d{yyyy-MM-dd HH:mm:ss,SSS} [%t] %-5p %c : %m%n"
+#  file:
+#    name: ./root.log
+#  appenders:
+#    - name: debugAppender
+#      type: File
+#      fileName: ./debug.log
+#      threshold: debug
+#      layout:
+#        type: PatternLayout
+
+

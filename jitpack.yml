@@ -1,0 +1,26 @@
+jdk:
+  - openjdk19
+
+before_install:
+  - sdk install java 19.0.2-open
+  - sdk use java 19.0.2-open
+
+install:
+  - echo "Running a custom install command"
+  - mvn clean install -DskipTests -P XJava,XSpringBootRedis,XSpringBootMysql,XRetrofit,XSpringBoot,XGenerateYmlConfig,XPlugSourcesBuild,XOKHttp,XKotlin,XShedlockSpringRedis
+
+env:
+  MYVAR: "custom environment variable"
+
+
+
+
+#  用法：mvn [options] [<goal(s)>] [<phase(s)>]
+#
+#  options：
+#  -D,--define <arg> 定义系统属性
+#  -e,--errors 生成执行错误消息
+#  -fn,--fail-never 无论项目结果如何，都不会使构建失败
+#  -P,--activate-profiles <arg> 要激活的配置文件的逗号分隔列表
+#  -q,--quiet 安静输出 - 仅显示错误
+#  -X,--debug 生成执行调试输出
