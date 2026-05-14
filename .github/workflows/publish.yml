@@ -81,6 +81,6 @@ jobs:
           
           # 激活父 POM 中的 XKotlin profile（包含 kapt 配置）
           # XKotlin profile 已设置 activeByDefault=true，但显式激活更可靠
-          mvn -B deploy -P XKotlin,XJava,XOKHttp,XPlugSourcesBuild,XRetrofit,XShedlockSpringRedis,XSpringBoot,XSpringBootMysql,XSpringBootRedis -DskipTests -e
+          mvn -B deploy -P XJava,XSpringBootMysql,XSpringBootRedis,XRetrofit,XSpringBoot,XPlugSourcesBuild,XOKHttp,XKotlin,XShedlockSpringRedis -DskipTests -e
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
