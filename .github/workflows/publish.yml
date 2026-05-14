@@ -79,7 +79,8 @@ jobs:
           mvn clean
           rm -rf target
           
-          # 重新构建并发布
-          mvn -B deploy -DskipTests
+          # 激活父 POM 中的 XKotlin profile（包含 kapt 配置）
+          # XKotlin profile 已设置 activeByDefault=true，但显式激活更可靠
+          mvn -B deploy -P XKotlin,XJava,XOKHttp,XPlugSourcesBuild,XRetrofit,XSpringBoot,XSpringBootMysql,XSpringBootRedis -DskipTests -e
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

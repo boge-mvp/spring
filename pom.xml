@@ -16,8 +16,6 @@
         </repository>
     </repositories>
 
-    <!-- https://jitpack.io/com/gitee/bogegit/spring-lib-parent/ -->
-    <!-- https://jitpack.io/#com.gitee.bogegit/spring-lib-parent -->
     <parent>
         <groupId>com.boge.spring.parent</groupId>
         <artifactId>spring-lib-parent</artifactId>
@@ -86,25 +84,6 @@
 
     </dependencies>
 
-    <build>
-        <plugins>
-            <!-- 生成源码包 -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-source-plugin</artifactId>
-                <version>3.3.0</version>
-                <executions>
-                    <execution>
-                        <id>attach-sources</id>
-                        <goals>
-                            <goal>jar-no-fork</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
-
     <distributionManagement>
         <repository>
             <!-- id需要与server对应的id匹配 -->
@@ -113,7 +92,5 @@
             <url>https://maven.pkg.github.com/boge-mvp/spring</url>
         </repository>
     </distributionManagement>
-
-
 
 </project>
