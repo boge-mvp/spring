@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AnalysisProjectProfileManager">
     <option name="PROJECT_PROFILE" />
@@ -5,11 +6,24 @@
     <list size="0" />
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="KubernetesApiProvider">{}</component>
+  <component name="KubernetesApiProvider"><![CDATA[{}]]></component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+    <option name="enabledProfiles">
+      <list>
+        <option value="XJava" />
+        <option value="XSpringBootMysql" />
+        <option value="XSpringBootRedis" />
+        <option value="XRetrofit" />
+        <option value="XSpringBoot" />
+        <option value="XPlugSourcesBuild" />
+        <option value="XOKHttp" />
+        <option value="XKotlin" />
+        <option value="XShedlockSpringRedis" />
       </list>
     </option>
   </component>
